@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+
+
+/*--------------------------------*\
+Basic Resets & STYLES
+\*--------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: 0.875rem;           /*15px*/
+    background-color: rgba(220, 220, 220, 0.178);
+}
+
+
+/*--------------------------------*\
+# HEADER
+\*--------------------------------*/
+/* NOTES ===========
+
+
+*/
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-info {
+    width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.product-info__quality {
+    font-weight: 200;
+
+    color: hsl(234, 12%, 34%);
+}
+
+.product-info__powered-by {
+    color: hsl(234, 12%, 34%);
+
+    margin-bottom: 0.5em;
+}
+
+.product-info__subtitle {
+    font-size: 1em;
+    text-align: center;
+
+    color: hsl(234, 12%, 34%);
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------------*\
+# MAIN
+\*--------------------------------*/
+/* NOTES ===========
+
+
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 0.6fr 1fr 0.6fr;
+    width: 100%;
+    margin: 2.5rem auto;
+}
+
+.grid-item
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container>:nth-child(2)
+{
+    row-gap: 2em;
+}
+.grid-item__card
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    width: 300px;
+    padding: 2em;
+    border-radius: 5px;
+    border-top: 5px solid;
+
+    background-color: white;
+}
+
+
+.card__top {
+    margin-right: 2em;
+}
+
+    .card__title{
+        color: hsl(234, 12%, 34%);
+    }
+    .card__info {
+        font-size: 0.8em;
+
+        color: hsl(229, 6%, 66%);
+    }
+
+.visual {
+    align-self: flex-end;
+}
+
+/* UTILITY CLASSES*/
+.red {
+    border-color: hsl(0, 78%, 62%);
+}
+.cyan {
+    border-color: hsl(180, 62%, 55%);
+}
+.orange {
+    border-color: hsl(34, 97%, 64%);
+}
+.blue {
+    border-color: hsl(212, 86%, 64%);
+}
+.shadow-drop
+{
+    box-shadow: 10px 10px 10px hsla(0, 7%, 79%, 0.425);
+}
+
+
+/*--------------------------------*\
+# Media Queries
+\*--------------------------------*/
+
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 0.9375rem;           /*15px*/
+    }
+    header {
+
+        margin-top: 2rem;
+        width: 100%;
+
+    }
+    .product-info__subtitle {
+        font-size: 0.8em;
+    }
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        width: 75%;
+    }
+    .grid-item__card
+    {
+        width: 90%;
+    }
+  
+}    
+/* 
+@media screen and (orientation: landscape) and (max-width : 800px) {
+    body {
+        font-size: 0.9375rem;    
+    }
+    header {
+
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 75%;
+    }
+    .product-info__subtitle {
+        font-size: 0.8em;
+    }
+    .grid-item__card
+    {
+        width: 90%;
+    }
+    .grid-container>:nth-child(2)
+    {
+        grid-row: 1 / 3;
+    }
+} */

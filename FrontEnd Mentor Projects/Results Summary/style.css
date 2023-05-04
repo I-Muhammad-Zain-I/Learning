@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Hanken Grotesk';
+    font-size: 18px;
+    background-color: #ffffff62;
+}
+
+.grid
+{
+    max-width: 1440px;
+    margin: 100px 400px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #fff;
+   border-radius: 30px;
+   gap: 10px;
+}
+
+.bg--blue
+{
+    display: flex;
+    flex-flow: column wrap;
+    color: white;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    padding: 10px 40px;
+}
+.great
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.bg--blue>:nth-child(1)
+{   
+    opacity: 70%;
+    margin-bottom: 30px;
+    font-size: 24px;
+
+}
+.bg--blue>:nth-child(2)
+{
+    border-radius: 100%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 77%, 27%, 0));
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.bg--blue>:nth-child(2)>:nth-child(1)
+{
+   font-size: 48px;
+   font-weight: 800;
+}
+.bg--blue>:nth-child(2)>:nth-child(2)
+{
+    opacity: 70%;
+
+}
+
+.great>:nth-child(1)
+{
+    font-weight: 600;
+    font-size: 24px;
+    
+}
+.great>:nth-child(2)
+{
+    opacity: 70%;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.bg--white
+{
+    display: flex;
+    flex-flow: column;
+    background-color: #fff;
+    align-items: center;
+    border-radius: 20px;
+    
+  
+    
+}
+ .white-format
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+   margin-bottom: 10px;
+} 
+.white-format>:nth-child(2)
+{
+    
+ 
+    margin-right:auto;
+    padding-left: 20px;
+   
+}
+.bg--white>:nth-child(1)
+{
+    color:  hsl(224, 30%, 27%);
+    font-weight: 600;
+    align-self: flex-start;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    
+}
+.bg--white>:nth-child(2)
+{
+   background-color: hsla(0, 100%, 67%, 0.13);
+ 
+
+}
+.bg--white>:nth-child(3)
+{
+   background-color: hsla(39, 100%, 56%, 0.185);
+   
+
+
+}
+.bg--white>:nth-child(4)
+{
+   background-color:hsla(166, 100%, 37%, 0.137);
+  
+
+
+}
+.bg--white>:nth-child(5)
+{
+   background-color: hsla(234, 85%, 45%, 0.13);
+   margin-bottom: 30px;
+  
+}
+.bg--white>:nth-child(6)
+{
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    color: #fff;
+    text-align: center;
+    width: 250px;
+    padding: 10px 0;
+}

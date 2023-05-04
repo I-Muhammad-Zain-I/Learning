@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');                     
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.card
+{
+    display: 1440px;
+    margin: 90px auto;
+    background-color: #fff;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+    padding:0 35px;
+    border-radius: 10px;
+}
+.card>:nth-child(1)
+{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.header
+{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.para
+{
+    text-align: center;
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+}
+span{
+    white-space: nowrap;
+}
+
+.plan
+{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    background-color: hsl(225, 100%, 98%);
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+.prices
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    
+}
+.prices>:nth-child(1)
+{
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+.prices>:nth-child(2)
+{
+    font-size: 12px;
+    color:hsl(224, 23%, 55%);
+}
+.plan>:nth-child(3)
+{
+   font-size: 12px;
+   font-weight: 600;
+}
+
+.btn
+{
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0px 10px 10px hsl(225, 100%, 94%);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.cancel
+{
+    padding-bottom: 30px;
+    font-size: 12px;
+    color:hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 375px)
+{
+    .card
+    {
+        width: 320px;
+    }
+    .card>:nth-child(1)
+    {
+        width: inherit;
+    }
+}

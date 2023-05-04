@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: rgba(245, 222, 179, 0.301);
+    
+}
+
+.card--component
+{
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 100px 420px;
+}
+
+.perfume-preview img
+{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+   
+}
+
+.perfume-descrip
+{
+    
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+   
+    padding: 47px 30px 46px 30px;
+    
+}
+
+.perfume-descrip>:nth-child(1)
+{
+    align-self: self-start;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+}
+
+.perfume-descrip>:nth-child(2)
+{
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    color: hsl(212, 21%, 14%);
+}
+.perfume-descrip>:nth-child(3)
+{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.prices
+{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+    margin-right: 40px;
+    gap: 30px;
+   
+}
+.prices>:nth-child(1)
+{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    
+}
+
+.prices>:nth-child(2)
+{
+    color:  hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    align-self: center;
+    text-decoration:line-through;
+   
+}
+.perfume-descrip>:nth-child(5)
+{
+    display: flex;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 12px 65px;
+    border-radius: 10px;
+    gap: 10px;
+}
